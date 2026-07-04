@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeez D Creators Agency | Bespoke Author Platforms</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: '#6D2E46',
+                        gold: '#C6A75E',
+                        parchment: '#F5F2E8',
+                        charcoal: '#1F1F1F',
+                        forest: '#3A5F4D',
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'Playfair Display', 'serif'],
+                        body: ['Lora', 'Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Premium Google Font Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Pro Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate On Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .parchment-grain {
+            background-color: #F5F2E8;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%236d2e46' fill-opacity='0.02'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .studio-blend {
+            mix-blend-mode: multiply;
+            filter: contrast(1.08) brightness(0.98);
+        }
+    </style>
+</head>
+<body class="parchment-grain text-charcoal font-body antialiased selection:bg-gold/30 selection:text-burgundy">
+
+    <!-- ELITE FIXED HEADER -->
+    <header class="fixed w-full top-0 z-40 bg-parchment/95 backdrop-blur-md border-b border-burgundy/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            
+            <!-- Handcrafted CSS Premium Logo Node -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 border-2 border-burgundy flex items-center justify-center rotate-45 group-hover:rotate-90 transition-transform duration-500">
+                    <i class="fa-solid fa-feather-pointed text-gold -rotate-45"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-black text-xl tracking-widest text-burgundy leading-none">AZEEZ D</span>
+                    <span class="font-heading text-[10px] tracking-[0.3em] text-gold uppercase font-bold mt-1">Creators Agency</span>
+                </div>
+            </a>
+            
+            <!-- Pro Navigation -->
+            <nav class="hidden md:flex items-center gap-10 font-heading text-xs tracking-[0.2em] font-bold">
+                <a href="#services" class="hover:text-gold transition-colors text-burgundy relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold hover:after:w-full after:transition-all">SERVICES</a>
+                <a href="#portfolio" class="hover:text-gold transition-colors text-burgundy relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold hover:after:w-full after:transition-all">PORTFOLIO</a>
+                <a href="#about" class="hover:text-gold transition-colors text-burgundy relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold hover:after:w-full after:transition-all">THE CREATOR</a>
+                <a href="#why-us" class="hover:text-gold transition-colors text-burgundy relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold hover:after:w-full after:transition-all">STANDARDS</a>
+                <a href="#contact" class="bg-burgundy text-white px-6 py-3 border border-burgundy hover:bg-transparent hover:text-burgundy transition-all duration-300 shadow-md">ACQUIRE AUDIT</a>
+            </nav>
+
+            <button id="menu-toggle" class="md:hidden text-burgundy p-2" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-drawer" class="hidden md:hidden bg-parchment border-b border-burgundy/10 px-8 py-8 space-y-4 font-heading text-center tracking-widest text-sm">
+            <a href="#services" class="block text-burgundy hover:text-gold font-bold py-2">SERVICES</a>
+            <a href="#portfolio" class="block text-burgundy hover:text-gold font-bold py-2">PORTFOLIO</a>
+            <a href="#about" class="block text-burgundy hover:text-gold font-bold py-2">THE CREATOR</a>
+            <a href="#why-us" class="block text-burgundy hover:text-gold font-bold py-2">STANDARDS</a>
+            <a href="#contact" class="block bg-burgundy text-white px-4 py-3 font-bold mt-4">FREE CONSULTATION</a>
+        </div>
+    </header>
+
+    <!-- CUSTOM HERO SYSTEM -->
+    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16 lg:py-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-burgundy/[0.02] to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
+            
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <span class="font-heading text-xs uppercase tracking-[0.3em] text-gold bg-burgundy/5 px-4 py-2 rounded-full font-bold inline-block">Bespoke Architectural Engineering</span>
+                <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-black text-burgundy leading-[1.15]">
+                    Crafting Digital Worlds <br><span class="font-body italic font-light text-gold">for Storytellers.</span>
+                </h1>
+                <p class="text-base sm:text-lg text-charcoal/80 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Premium websites and publishing services for authors who want to build their brand and sell more books. We eliminate common web-builder templates to deliver elite digital assets.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#portfolio" class="w-full sm:w-auto bg-burgundy hover:bg-transparent text-white hover:text-burgundy border border-burgundy px-8 py-4 font-heading tracking-widest text-xs font-bold transition-all duration-300 shadow-xl text-center">
+                        EXPLORE WORK
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto bg-transparent hover:bg-burgundy text-burgundy hover:text-white border border-burgundy/40 px-8 py-4 font-heading tracking-widest text-xs font-bold transition-all duration-300 text-center">
+                        REQUEST BRIEF
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Frame 3 (Portrait 3 Studio Integration) -->
+            <div class="lg:col-span-5 flex justify-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="relative group w-full max-w-sm">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-burgundy to-gold opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition-all duration-700"></div>
+                    <div class="relative border border-burgundy/20 bg-[#DFDAD0] p-4 shadow-2xl transition-all duration-500 group-hover:border-gold">
+                        <div class="overflow-hidden bg-gradient-to-b from-[#e3ded4] to-[#b8af9f] aspect-[3/4] relative">
+                            <!-- In production replace src with your direct hosted link -->
+                            <img src="https://i.ibb.co/6cwFmZf3/photo-3.jpg" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'" alt="Abdulazeez Sulaiman Studio Front" class="w-full h-full object-cover studio-blend group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="font-heading text-xs tracking-widest font-bold text-burgundy">ABDULAFEEZ SULAIMAN</p>
+                            <p class="font-body text-xs text-gold italic mt-0.5">Founder & Systems Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CORE SERVICES -->
+    <section id="services" class="py-24 bg-white/80 border-y border-burgundy/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <p class="font-heading text-xs tracking-[0.25em] text-gold font-bold uppercase">Agency Capabilities</p>
+                <h2 class="font-heading text-3xl font-bold text-burgundy mt-2">What We Do for Authors</h2>
+                <div class="w-12 h-0.5 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-parchment/60 p-8 border border-burgundy/10 hover:border-gold/60 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-burgundy text-gold flex items-center justify-center text-xl mb-6 transition-all duration-300 group-hover:bg-gold group-hover:text-burgundy shadow-sm">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-burgundy mb-3">Custom Author Websites</h3>
+                    <p class="text-charcoal/80 text-sm leading-relaxed">Bespoke websites tailored to your genre, brand, and audience. Mobile-first, SEO-optimized, and designed to convert readers into fans.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-parchment/60 p-8 border border-burgundy/10 hover:border-gold/60 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-burgundy text-gold flex items-center justify-center text-xl mb-6 transition-all duration-300 group-hover:bg-gold group-hover:text-burgundy shadow-sm">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-burgundy mb-3">Publishing Services</h3>
+                    <p class="text-charcoal/80 text-sm leading-relaxed">Formatting, cover design, and platform distribution (Kindle, Paperback, Audiobook). We help you get your book into the hands of readers.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-parchment/60 p-8 border border-burgundy/10 hover:border-gold/60 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-burgundy text-gold flex items-center justify-center text-xl mb-6 transition-all duration-300 group-hover:bg-gold group-hover:text-burgundy shadow-sm">
+                        <i class="fa-solid fa-paint-brush"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-burgundy mb-3">Branding & Marketing</h3>
+                    <p class="text-charcoal/80 text-sm leading-relaxed">Author logos, social media graphics, and promotional materials. Newsletter setup and reader magnet strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE PORTFOLIO REFERENCE GRID -->
+    <section id="portfolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <p class="font-heading text-xs tracking-[0.25em] text-gold font-bold uppercase">Proven Production Assets</p>
+                <h2 class="font-heading text-3xl font-bold text-burgundy mt-2">Live Project References</h2>
+                <div class="w-12 h-0.5 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: James Clear -->
+                <a href="https://author-authority-site--jamesclear.replit.app/" target="_blank" class="block bg-black shadow-xl group overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-center justify-between px-4 py-2.5 bg-black border-b border-white/10">
+                        <span class="text-[9px] font-heading font-black tracking-widest text-charcoal bg-gold px-3 py-1 uppercase">Non-Fiction</span>
+                        <span class="text-[10px] text-white/30 font-mono truncate ml-3">author-authority-site--jamesclear.replit.app/</span>
+                    </div>
+                    <div class="relative bg-parchment h-56 overflow-hidden">
+                        <iframe src="https://author-authority-site--jamesclear.replit.app/" class="absolute top-0 left-0 w-[1400px] h-[1000px] origin-top-left pointer-events-none border-0" style="transform: scale(0.265);" loading="lazy" tabindex="-1" title="James Clear site preview"></iframe>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4 bg-charcoal">
+                        <div>
+                            <h3 class="font-heading text-base font-bold text-white">James Clear</h3>
+                            <span class="text-[10px] font-heading tracking-widest text-gold uppercase font-bold">Non-Fiction</span>
+                        </div>
+                        <span class="text-[11px] font-heading tracking-widest text-white/70 group-hover:text-gold transition-colors flex items-center gap-2 uppercase font-bold">Visit Site <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Leigh Bardugo -->
+                <a href="https://fantasy-author-hub--leighbardugo.replit.app/" target="_blank" class="block bg-black shadow-xl group overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-between px-4 py-2.5 bg-black border-b border-white/10">
+                        <span class="text-[9px] font-heading font-black tracking-widest text-charcoal bg-gold px-3 py-1 uppercase">YA Fantasy</span>
+                        <span class="text-[10px] text-white/30 font-mono truncate ml-3">fantasy-author-hub--leighbardugo.replit.app/</span>
+                    </div>
+                    <div class="relative bg-parchment h-56 overflow-hidden">
+                        <iframe src="https://fantasy-author-hub--leighbardugo.replit.app/" class="absolute top-0 left-0 w-[1400px] h-[1000px] origin-top-left pointer-events-none border-0" style="transform: scale(0.265);" loading="lazy" tabindex="-1" title="Leigh Bardugo site preview"></iframe>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4 bg-charcoal">
+                        <div>
+                            <h3 class="font-heading text-base font-bold text-white">Leigh Bardugo</h3>
+                            <span class="text-[10px] font-heading tracking-widest text-gold uppercase font-bold">YA Fantasy</span>
+                        </div>
+                        <span class="text-[11px] font-heading tracking-widest text-white/70 group-hover:text-gold transition-colors flex items-center gap-2 uppercase font-bold">Visit Site <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 3: Ava Sinclair -->
+                <a href="https://romance-author-site--avasinclair.replit.app/" target="_blank" class="block bg-black shadow-xl group overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center justify-between px-4 py-2.5 bg-black border-b border-white/10">
+                        <span class="text-[9px] font-heading font-black tracking-widest text-charcoal bg-gold px-3 py-1 uppercase">Romance</span>
+                        <span class="text-[10px] text-white/30 font-mono truncate ml-3">romance-author-site--avasinclair.replit.app/</span>
+                    </div>
+                    <div class="relative bg-parchment h-56 overflow-hidden">
+                        <iframe src="https://romance-author-site--avasinclair.replit.app/" class="absolute top-0 left-0 w-[1400px] h-[1000px] origin-top-left pointer-events-none border-0" style="transform: scale(0.265);" loading="lazy" tabindex="-1" title="Ava Sinclair site preview"></iframe>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4 bg-charcoal">
+                        <div>
+                            <h3 class="font-heading text-base font-bold text-white">Ava Sinclair</h3>
+                            <span class="text-[10px] font-heading tracking-widest text-gold uppercase font-bold">Romance</span>
+                        </div>
+                        <span class="text-[11px] font-heading tracking-widest text-white/70 group-hover:text-gold transition-colors flex items-center gap-2 uppercase font-bold">Visit Site <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 4: Alex Michaelides -->
+                <a href="https://attached-assets--alexmichaelide.replit.app/" target="_blank" class="block bg-black shadow-xl group overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center justify-between px-4 py-2.5 bg-black border-b border-white/10">
+                        <span class="text-[9px] font-heading font-black tracking-widest text-charcoal bg-gold px-3 py-1 uppercase">Thriller</span>
+                        <span class="text-[10px] text-white/30 font-mono truncate ml-3">attached-assets--alexmichaelide.replit.app/</span>
+                    </div>
+                    <div class="relative bg-parchment h-56 overflow-hidden">
+                        <iframe src="https://attached-assets--alexmichaelide.replit.app/" class="absolute top-0 left-0 w-[1400px] h-[1000px] origin-top-left pointer-events-none border-0" style="transform: scale(0.265);" loading="lazy" tabindex="-1" title="Alex Michaelides site preview"></iframe>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4 bg-charcoal">
+                        <div>
+                            <h3 class="font-heading text-base font-bold text-white">Alex Michaelides</h3>
+                            <span class="text-[10px] font-heading tracking-widest text-gold uppercase font-bold">Thriller</span>
+                        </div>
+                        <span class="text-[11px] font-heading tracking-widest text-white/70 group-hover:text-gold transition-colors flex items-center gap-2 uppercase font-bold">Visit Site <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 5: Eckhart Tolle -->
+                <a href="https://profile-bio-tool--eckharttolle.replit.app/#youth-initiative" target="_blank" class="block bg-black shadow-xl group overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center justify-between px-4 py-2.5 bg-black border-b border-white/10">
+                        <span class="text-[9px] font-heading font-black tracking-widest text-charcoal bg-gold px-3 py-1 uppercase">Mindfulness</span>
+                        <span class="text-[10px] text-white/30 font-mono truncate ml-3">profile-bio-tool--eckharttolle.replit.app/#youth-initiative</span>
+                    </div>
+                    <div class="relative bg-parchment h-56 overflow-hidden">
+                        <iframe src="https://profile-bio-tool--eckharttolle.replit.app/#youth-initiative" class="absolute top-0 left-0 w-[1400px] h-[1000px] origin-top-left pointer-events-none border-0" style="transform: scale(0.265);" loading="lazy" tabindex="-1" title="Eckhart Tolle site preview"></iframe>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4 bg-charcoal">
+                        <div>
+                            <h3 class="font-heading text-base font-bold text-white">Eckhart Tolle</h3>
+                            <span class="text-[10px] font-heading tracking-widest text-gold uppercase font-bold">Mindfulness</span>
+                        </div>
+                        <span class="text-[11px] font-heading tracking-widest text-white/70 group-hover:text-gold transition-colors flex items-center gap-2 uppercase font-bold">Visit Site <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECT STATEMENT (Portrait 1 Studio Integration) -->
+    <section id="about" class="py-24 bg-burgundy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="flex justify-center" data-aos="fade-right">
+                <div class="relative max-w-xs sm:max-w-sm w-full">
+                    <div class="absolute inset-0 border border-gold/40 translate-x-4 translate-y-4"></div>
+                    <div class="relative bg-[#2D121B] border border-white/10 p-4 shadow-2xl">
+                        <div class="overflow-hidden bg-gradient-to-b from-[#4A1D2D] to-[#1A0A10] aspect-[3/4]">
+                            <!-- Image 1 Applied to Studio Backdrop Setting Frame -->
+                            <img src="https://i.ibb.co/C3YmYfG0/photo-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'" alt="Abdulazeez Sulaiman Studio Profile" class="w-full h-full object-cover studio-blend">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6" data-aos="fade-left">
+                <span class="font-heading text-xs uppercase tracking-[0.25em] text-gold font-bold">The Systems Architect</span>
+                <h2 class="font-heading text-3xl font-bold">Abdulazeez Sulaiman</h2>
+                <p class="text-parchment/80 text-sm sm:text-base font-light leading-relaxed">
+                    I treat author platform engineering precisely like master storytelling. An author spends years forging detailed narrative worlds; their digital flagship should mirror that depth rather than feeling like a generic template.
+                </p>
+                <p class="text-parchment/80 text-sm sm:text-base font-light leading-relaxed">
+                    Through meticulous performance engineering, semantic clean layouts, and elite typography frameworks, I position my clients as high-value, unforgettable literary forces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TRUST US STANDARDS SECTION -->
+    <section id="why-us" class="py-24 bg-white/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <p class="font-heading text-xs tracking-[0.25em] text-gold font-bold uppercase">Technical Benchmarks</p>
+                <h2 class="font-heading text-3xl font-bold text-burgundy mt-2">Why Authors Trust Us</h2>
+                <div class="w-12 h-0.5 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+                <div class="p-6 bg-white border border-burgundy/5 shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gold text-xl mb-3"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-heading font-bold text-burgundy text-base mb-1">Genre-Specific Design</h4>
+                    <p class="text-charcoal/70 leading-relaxed">We tailor every website to the author’s genre, ensuring it resonates with their audience.</p>
+                </div>
+                <div class="p-6 bg-white border border-burgundy/5 shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gold text-xl mb-3"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-heading font-bold text-burgundy text-base mb-1">Conversion-Focused</h4>
+                    <p class="text-charcoal/70 leading-relaxed">Our websites aren’t just beautiful—they’re built to sell books and grow your audience.</p>
+                </div>
+                <div class="p-6 bg-white border border-burgundy/5 shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gold text-xl mb-3"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-heading font-bold text-burgundy text-base mb-1">Seamless Amazon Hub</h4>
+                    <p class="text-charcoal/70 leading-relaxed">Direct links to your books, optimized for sales and reader convenience.</p>
+                </div>
+                <div class="p-6 bg-white border border-burgundy/5 shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-gold text-xl mb-3"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-heading font-bold text-burgundy text-base mb-1">Fast & Responsive</h4>
+                    <p class="text-charcoal/70 leading-relaxed">Mobile-first design that looks great on every device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE INQUIRY TRANSMISSION SEC (Portrait 2 Studio Integration) -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border border-burgundy/10 shadow-2xl grid lg:grid-cols-12 overflow-hidden">
+                
+                <!-- Contact Studio Frame -->
+                <div class="lg:col-span-5 bg-charcoal text-white p-12 flex flex-col justify-between relative overflow-hidden" data-aos="fade-right">
+                    <div class="absolute inset-0 opacity-15 pointer-events-none">
+                        <!-- Image 2 Frame Applied to dark studio aesthetic context -->
+                        <img src="https://i.ibb.co/3mNgrZPr/photo-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&w=600&q=80'" alt="Abdulazeez Sulaiman Studio Headset" class="w-full h-full object-cover filter contrast-125 brightness-75">
+                    </div>
+                    <div class="relative z-10 space-y-4">
+                        <span class="font-heading text-xs tracking-widest text-gold font-bold uppercase">Direct Transmission</span>
+                        <h3 class="font-heading text-2xl font-bold">Let's Build Your Author Platform</h3>
+                        <p class="text-white/60 text-sm font-light">Form details route directly to engineering via production automation.</p>
+                    </div>
+                    <div class="relative z-10 mt-12 pt-6 border-t border-white/10 text-[11px] text-white/40 tracking-wider uppercase font-heading">
+                        <p><i class="fa-solid fa-shield-halved text-gold mr-2"></i> Verified Encrypted Inbound Routing Enabled</p>
+                    </div>
+                </div>
+
+                <!-- Live Functional Email Intake Form -->
+                <!-- PASTE YOUR FORMSPREE TOKEN IN THE ACTION ATTRIBUTE BELOW TO ACTIVATE LIVE INBOX DELIVERY -->
+                <div class="lg:col-span-7 p-8 sm:p-12 bg-white" data-aos="fade-left">
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-heading text-[10px] tracking-widest uppercase text-burgundy font-bold mb-2">Author Name *</label>
+                                <input type="text" name="name" required class="w-full bg-parchment/40 border border-burgundy/20 focus:border-gold focus:outline-none p-3.5 text-sm transition-all">
+                            </div>
+                            <div>
+                                <label class="block font-heading text-[10px] tracking-widest uppercase text-burgundy font-bold mb-2">Email Address *</label>
+                                <input type="email" name="email" required class="w-full bg-parchment/40 border border-burgundy/20 focus:border-gold focus:outline-none p-3.5 text-sm transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-heading text-[10px] tracking-widest uppercase text-burgundy font-bold mb-2">Primary Literature Genre</label>
+                            <div class="relative">
+                                <select name="genre" class="w-full bg-parchment/40 border border-burgundy/20 focus:border-gold focus:outline-none p-3.5 text-sm appearance-none transition-all">
+                                    <option>Romance</option>
+                                    <option>Thriller</option>
+                                    <option>Fantasy</option>
+                                    <option>Historical Fiction</option>
+                                    <option>Sci-Fi</option>
+                                    <option>Business / Leadership</option>
+                                    <option>Cozy Mystery</option>
+                                    <option>Horror</option>
+                                    <option>Literary Fiction</option>
+                                    <option>Other</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-4 top-4.5 text-xs text-burgundy/50 pointer-events-none"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-heading text-[10px] tracking-widest uppercase text-burgundy font-bold mb-2">Platform Goals & Vision *</label>
+                            <textarea name="message" rows="4" required placeholder="Outline your current backlist, release schedules, or stylistic preferences..." class="w-full bg-parchment/40 border border-burgundy/20 focus:border-gold focus:outline-none p-3.5 text-sm transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-burgundy hover:bg-gold text-white hover:text-burgundy font-heading text-xs tracking-widest font-bold uppercase py-4 transition-all duration-300 shadow-md">TRANSMIT BRIEF DIRECT TO GMAIL</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM HIGH-DENSITY FOOTER MENU SYSTEM -->
+    <footer class="bg-charcoal text-white pt-20 border-t border-gold/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+                
+                <!-- Identity Matrix Node -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 border border-white/20 flex items-center justify-center rotate-45">
+                            <i class="fa-solid fa-feather-pointed text-gold -rotate-45 text-xs"></i>
+                        </div>
+                        <span class="font-heading font-bold text-lg tracking-widest text-white">AZEEZ D CREATORS</span>
+                    </div>
+                    <p class="text-white/50 text-xs leading-relaxed max-w-sm">
+                        Eliminating predictable web templates in favor of bespoke, highly optimized architectural masterworks for prominent storytellers across global genres.
+                    </p>
+                </div>
+
+                <!-- Structured Dynamic Footer Menu (Not Dull) -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="font-heading text-[10px] uppercase tracking-[0.25em] text-gold font-bold">Operational Assets</h4>
+                    <div class="grid grid-cols-1 gap-2 text-xs font-medium tracking-wider">
+                        <a href="#services" class="text-white/60 hover:text-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[8px] text-gold/40"></i> System Solutions</a>
+                        <a href="#portfolio" class="text-white/60 hover:text-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[8px] text-gold/40"></i> Case Reference Hubs</a>
+                        <a href="#about" class="text-white/60 hover:text-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[8px] text-gold/40"></i> Executive Profile</a>
+                    </div>
+                </div>
+
+                <!-- Professional Marketplace Integrations -->
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="font-heading text-[10px] uppercase tracking-[0.25em] text-gold font-bold">Contract Nodes</h4>
+                    <div class="grid grid-cols-2 gap-2 text-xs font-heading tracking-widest">
+                        <a href="https://www.fiverr.com/azeezcreator" target="_blank" class="bg-white/5 border border-white/10 p-3 hover:bg-gold hover:text-charcoal transition-all flex items-center gap-2"><i class="fa-solid fa-bolt text-gold"></i> FIVERR</a>
+                        <a href="https://www.upwork.com/freelancers/~01553923f10741f1e8" target="_blank" class="bg-white/5 border border-white/10 p-3 hover:bg-gold hover:text-charcoal transition-all flex items-center gap-2"><i class="fa-solid fa-briefcase text-gold"></i> UPWORK</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- WELL-CRAFTED HIGH-DENSITY TERMINAL BASE SECTION -->
+            <div class="py-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+                
+                <!-- Pure Direct-End Contact Info Grid Block -->
+                <div class="w-full lg:w-auto grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white/[0.02] border border-white/5 p-4 rounded-sm text-xs">
+                    <a href="mailto:azeezcreatorsagency@gmail.com" class="flex items-center gap-3 p-2 bg-charcoal hover:bg-white/5 border border-white/5 transition-all">
+                        <div class="w-8 h-8 bg-burgundy flex items-center justify-center text-gold"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="overflow-hidden">
+                            <span class="text-[9px] font-heading text-gold block tracking-widest uppercase">GMAIL DIRECT</span>
+                            <span class="text-white/80 block truncate">azeezcreatorsagency@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://wa.me/19518261930" target="_blank" class="flex items-center gap-3 p-2 bg-charcoal hover:bg-white/5 border border-white/5 transition-all">
+                        <div class="w-8 h-8 bg-forest flex items-center justify-center text-white"><i class="fa-brands fa-whatsapp text-base"></i></div>
+                        <div>
+                            <span class="text-[9px] font-heading text-gold block tracking-widest uppercase">WHATSAPP ENCRYPTED</span>
+                            <span class="text-white/80 block font-sans">+1 (951) 826 1930</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abdulazeez-sulaiman-a5980231b/" target="_blank" class="flex items-center gap-3 p-2 bg-charcoal hover:bg-white/5 border border-white/5 transition-all">
+                        <div class="w-8 h-8 bg-blue-900 flex items-center justify-center text-white"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="overflow-hidden">
+                            <span class="text-[9px] font-heading text-gold block tracking-widest uppercase">LINKEDIN NETWORK</span>
+                            <span class="text-white/80 block truncate">Abdulazeez Sulaiman</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Compliance & Copyright Footer Matrix Links -->
+                <div class="text-center lg:text-right space-y-2 text-xs">
+                    <div class="flex justify-center lg:justify-end gap-4 font-heading text-[10px] tracking-widest uppercase font-bold text-white/50">
+                        <button onclick="toggleModal('privacy-modal')" class="hover:text-gold transition-colors">PRIVACY POLICY</button>
+                        <span>&middot;</span>
+                        <button onclick="toggleModal('terms-modal')" class="hover:text-gold transition-colors">TERMS OF SERVICE</button>
+                    </div>
+                    <p class="text-white/30 text-[11px]">&copy; 2026 Azeez D Creators Agency. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING LIVE CHAT AND DIRECT REACH WIDGET -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+        <!-- Floating Expansion Drawer Panel -->
+        <div id="chat-drawer" class="hidden bg-white border border-burgundy/10 shadow-2xl p-4 w-64 space-y-3 transition-all duration-300">
+            <div class="bg-burgundy text-white p-3 text-center rounded-sm">
+                <p class="font-heading text-xs tracking-widest uppercase font-bold">Live Support Channels</p>
+                <p class="text-[10px] text-gold italic">Azeez D Creators Agency</p>
+            </div>
+            <div class="space-y-2 text-xs font-heading font-bold tracking-wider">
+                <a href="mailto:azeezcreatorsagency@gmail.com" class="flex items-center gap-3 p-2.5 bg-parchment hover:bg-gold/20 text-burgundy transition-all"><i class="fa-solid fa-envelope text-sm"></i> Direct Gmail Inbox</a>
+                <a href="https://wa.me/19518261930" target="_blank" class="flex items-center gap-3 p-2.5 bg-parchment hover:bg-gold/20 text-burgundy transition-all"><i class="fa-brands fa-whatsapp text-sm text-forest"></i> WhatsApp Support</a>
+                <a href="https://www.upwork.com/freelancers/~01553923f10741f1e8" target="_blank" class="flex items-center gap-3 p-2.5 bg-parchment hover:bg-gold/20 text-burgundy transition-all"><i class="fa-solid fa-briefcase text-sm"></i> Upwork Profile</a>
+                <a href="https://www.fiverr.com/azeezcreator" target="_blank" class="flex items-center gap-3 p-2.5 bg-parchment hover:bg-gold/20 text-burgundy transition-all"><i class="fa-solid fa-bolt text-sm"></i> Fiverr Profile</a>
+            </div>
+        </div>
+        <!-- Core Hub Trigger Button -->
+        <button onclick="document.getElementById('chat-drawer').classList.toggle('hidden')" class="w-14 h-14 bg-burgundy hover:bg-gold text-white hover:text-burgundy rounded-full shadow-2xl flex items-center justify-center text-xl transition-all duration-300 transform hover:scale-110 border border-gold/30" aria-label="Open Channels Open Tool">
+            <i class="fa-solid fa-comments"></i>
+        </button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- LEGAL MODALS COMPLIANCE MATRICES -->
+    <!-- ========================================== -->
+
+    <!-- PRIVACY POLICY MODAL CONTAINER -->
+    <div id="privacy-modal" class="fixed inset-0 z-50 bg-charcoal/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 border border-burgundy/20 rounded-sm shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-burgundy/10 pb-4">
+                <h3 class="font-heading font-bold text-lg text-burgundy">PRIVACY POLICY</h3>
+                <button onclick="toggleModal('privacy-modal')" class="text-charcoal/50 hover:text-burgundy text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="text-xs sm:text-sm text-charcoal/80 leading-relaxed space-y-3 font-sans">
+                <p class="font-bold text-burgundy">Effective Date: July 4, 2026</p>
+                <p>Azeez D Creators Agency operates this portfolio platform. We are fully committed to treating user-provided context metrics with absolute data discretion and maximum computational security profiles.</p>
+                <p class="font-bold">1. Information Collection</p>
+                <p>We process standard inbound metadata voluntarily supplied via our operational submission form, including name parameters, transactional contact information, and artistic genre definitions.</p>
+                <p class="font-bold">2. Information Processing Vectors</p>
+                <p>Information routed via this architecture is leveraged entirely to structure design configurations, fulfill production outreach, and service strategic client development pipelines.</p>
+                <p class="font-bold">3. Retention Protocols</p>
+                <p>Data metrics are stored cleanly within standard secure servers and are never sold or distributed to third-party list aggregation algorithms under any circumstances.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS OF SERVICE MODAL CONTAINER -->
+    <div id="terms-modal" class="fixed inset-0 z-50 bg-charcoal/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 border border-burgundy/20 rounded-sm shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-burgundy/10 pb-4">
+                <h3 class="font-heading font-bold text-lg text-burgundy">TERMS OF SERVICE</h3>
+                <button onclick="toggleModal('terms-modal')" class="text-charcoal/50 hover:text-burgundy text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="text-xs sm:text-sm text-charcoal/80 leading-relaxed space-y-3 font-sans">
+                <p class="font-bold text-burgundy">Effective Date: July 4, 2026</p>
+                <p>By browsing or transmitting creative project directives to Azeez D Creators Agency via this domain, you accept complete structural alignment with the legal benchmarks declared below:</p>
+                <p class="font-bold">1. Client Engagements & Onboarding</p>
+                <p>Inbound requests submitted via this platform constitute preliminary discovery explorations. Binding contractual obligations are only active once formal service agreements are co-signed.</p>
+                <p class="font-bold">2. Intellectual Property Rights</p>
+                <p>All reference web builds showcased are protected live demonstrations. Unauthorized replication of layout design styles or brand properties without engineering consent will be subject to direct technical auditing.</p>
+                <p class="font-bold">3. Liability Limits</p>
+                <p>Azeez D Creators Agency functions purely as a service consultant. We are not liable for third-party hosting service downtime or individual book launch metric variances.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT CODES ENGINE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Animation Mechanics
+        AOS.init({ once: true, duration: 700, easing: 'ease-out' });
+
+        // Nav Drawer Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        menuToggle.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        // Universal Modal Switcher Mechanics
+        function toggleModal(modalId) {
+            const el = document.getElementById(modalId);
+            el.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
